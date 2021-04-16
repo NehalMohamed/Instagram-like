@@ -44,7 +44,7 @@ class Settings extends Component{
         domtoimage.toPng(img, { quality: 0.95 })
         .then(function (dataUrl) {
             var link = document.createElement('a');
-            link.download = 'my-image-name.png';
+            link.download = 'Photo.png';
             link.href = dataUrl;
             link.click();
         });
@@ -56,7 +56,7 @@ class Settings extends Component{
         domtoimage.toJpeg(img, { quality: 0.95 })
         .then(function (dataUrl) {
             var link = document.createElement('a');
-            link.download = 'my-image-name.jpeg';
+            link.download = 'Photo.jpeg';
             link.href = dataUrl;
             link.click();
         });
